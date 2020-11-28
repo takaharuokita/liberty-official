@@ -1,0 +1,680 @@
+@charset "UTF-8";
+header ul li:nth-of-type(6) a {
+    border-bottom: 2px solid #fff;
+}
+
+.fixed ul li:nth-of-type(6) a {
+    border-bottom: 2px solid #fff;
+}
+
+header ul li:nth-of-type(1) a {
+    border-bottom: none;
+    padding-bottom: 0rem;
+}
+
+.fixed ul li:nth-of-type(1) a {
+    border-bottom: none;
+    padding-bottom: 0rem;
+}
+
+@media screen and (max-width:767px) {
+    header ul li:nth-of-type(2) a {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 0.04rem;
+    }
+    header ul li:nth-of-type(1) a {
+        border-bottom: none !important;
+        padding-bottom: 0rem !important;
+    }
+    .fixed ul li:nth-of-type(1) a {
+        border-bottom: none !important;
+        padding-bottom: 0rem !important;
+    }
+}
+
+
+/*============================
+事業内容
+============================*/
+
+#service {
+    color: #181a31;
+    background-image: none;
+    margin-bottom: 0;
+}
+
+#service #mv {
+    height: auto;
+}
+
+@media screen and (max-width:767px) {
+    #service .container1300 {
+        padding: 0 .3rem;
+    }
+}
+
+.service_mv {
+    position: relative;
+    padding-top: 37.5%;
+    background-image: url("../img/education.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+
+@media screen and (max-width:900px) {
+    .service_mv {
+        padding-top: 47.5%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_mv {
+        padding-top: 2.7rem;
+        background-image: url("../img/consul.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto;
+    }
+}
+
+.service_mv .section_kasou_ttl {
+    position: absolute;
+    top: calc(50% - 0.16rem);
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    line-height: 1.7;
+    /* padding-top: 0.6rem;
+	background-image:url("../common/img/ttl_logo_white.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: auto 0.47rem; */
+    font-size: 0.48rem;
+    letter-spacing: 0.14em;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    .service_mv .section_kasou_ttl {
+        padding-top: 0.4rem;
+        background-size: auto 0.34rem;
+        /* padding-bottom: 0.4rem; */
+        font-size: .27rem;
+        top: 40%;
+        transform: translateX(-50%) translateY(-30%);
+    }
+}
+
+.service_mv .section_kasou_ttl span {
+    font-size: 0.32rem;
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+}
+
+@media screen and (max-width:767px) {
+    .service_mv .section_kasou_ttl span {
+        font-size: .19rem;
+        margin-top: .05rem;
+    }
+}
+
+.service_intro {
+    margin-top: -1rem !important;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro {
+        margin-top: -.5rem !important;
+    }
+}
+
+.service_intro .in {
+    background: #FFF;
+    padding: .85rem 0 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .in {
+        padding: .35rem 0 .6rem;
+    }
+}
+
+.service_intro h3 {
+    font-size: 0.3rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    margin-bottom: .62rem;
+    line-height: 1.86;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro h3 {
+        font-size: .18rem;
+        line-height: 1.8333;
+        letter-spacing: .05em;
+        margin-bottom: .45rem;
+    }
+}
+
+.service_intro .introList {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList {
+        flex-direction: column;
+    }
+}
+
+.service_intro .introList .item {
+    width: 33%;
+    max-width: 400px;
+    background: #0084d1;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList .item {
+        width: 100%;
+        max-width: none;
+    }
+    .service_intro .introList .item+.item {
+        margin-top: .2rem;
+    }
+}
+
+.service_intro .introList .item:nth-child(2n) {
+    background: #00a2ff;
+}
+
+.service_intro .introList .item .photo {
+    position: relative;
+}
+
+.service_intro .introList .item .photo:after {
+    content: '';
+    width: 1px;
+    height: .4rem;
+    position: absolute;
+    bottom: -.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #033780;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList .item .photo:after {
+        height: .3rem;
+        bottom: -.15rem;
+    }
+    .service_intro .introList .item .photo .ph img {
+        width: 100%;
+    }
+}
+
+
+/* img {
+	vertical-align: bottom;
+} */
+
+.service_intro .introList .item .photo .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: .5rem;
+    line-height: 1;
+    letter-spacing: .1em;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+}
+
+.service_intro .introList .item .box {
+    padding: .45rem .3rem .35rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList .item .box {
+        padding: .35rem .3rem .28rem;
+    }
+}
+
+.service_intro .introList .item .box h4 {
+    line-height: 1;
+    font-size: .24rem;
+    letter-spacing: .2em;
+    margin-bottom: .2rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList .item .box h4 {
+        font-size: .21rem;
+        margin-bottom: .15rem;
+    }
+}
+
+.service_intro .introList .item .box p {
+    line-height: 1.75;
+    letter-spacing: 0;
+    font-size: .16rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:767px) {
+    .service_intro .introList .item .box p {
+        font-size: .14rem;
+        line-height: 1.64;
+    }
+}
+
+.service_construction {
+    background: #edf4f6;
+    padding: 3rem 0 1.2rem;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction {
+        padding: .6rem 0 .7rem;
+    }
+    #service .service_construction .container1300 {
+        padding: 0 .2rem;
+    }
+}
+
+.service_construction .img {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 43%;
+    z-index: 2;
+}
+
+.service_construction .img img {
+    width: 100%;
+}
+
+@media screen and (max-width:1399px) {
+    .service_construction .img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .img {
+        position: relative;
+        width: auto;
+        top: 0;
+        margin-left: .4rem;
+    }
+    .service_construction .img img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.service_construction .box {
+    background: #fff;
+    padding: .75rem 1rem 2.79rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media screen and (max-width:1024px) {
+    .service_construction .box {
+        padding: .75rem 1rem 1.75rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .box {
+        padding: 0;
+        background: none;
+    }
+}
+
+.service_construction .box:before {
+    content: '';
+    /* background: url('../img/service/logo_bg.png');
+	background-size: cover; */
+    height: 4.12rem;
+    width: 6.44rem;
+    position: absolute;
+    left: -1.6rem;
+    bottom: -.3rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .box:before {
+        width: 3.22rem;
+        height: 2.06rem;
+        left: -.68rem;
+        bottom: .15rem;
+        z-index: 1;
+    }
+}
+
+.service_construction .box:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.service_construction .box_text {
+    width: 6rem;
+    float: left;
+    position: relative;
+}
+
+@media screen and (max-width:1200px) {
+    .service_construction .box_text {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .service_construction .box_text {
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .box_text {
+        width: auto;
+        float: none;
+        padding: .83rem .2rem 1.35rem;
+        background: #fff;
+        margin-top: -.5rem;
+    }
+}
+
+.service_construction .box_text .txt {
+    font-size: .16rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    line-height: 2;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .box_text .txt {
+        font-size: .15rem;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.service_construction .box_text .comment {
+    font-size: .14rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    line-height: 1;
+    margin-top: .4rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .box_text .comment {
+        font-size: .12rem;
+        line-height: 1.6667;
+        margin-top: .34rem;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.service_construction .listJob {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .listJob {
+        padding: 0 .2rem;
+        flex-direction: column;
+        margin-top: -.85rem;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.service_construction .listJob .item {
+    width: 29.092%;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .listJob .item {
+        width: 100%;
+    }
+    .service_construction .listJob .item+.item {
+        margin-top: .45rem;
+    }
+}
+
+.service_construction .listJob .item .ph {
+    position: relative;
+}
+
+.service_construction .listJob .item .ph:after {
+    content: '';
+    width: 1px;
+    height: .4rem;
+    position: absolute;
+    bottom: -.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #033780;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .listJob .item .ph:after {
+        height: .3rem;
+        bottom: -.15rem;
+    }
+}
+
+.service_construction .listJob .item .ttl {
+    font-size: .2rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    line-height: 1;
+    text-align: center;
+    margin: .5rem 0 .25rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .listJob .item .ttl {
+        font-size: .21rem;
+        margin: .3rem 0 .15rem;
+    }
+}
+
+.service_construction .listJob .item .txt {
+    font-size: .16rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.75;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .listJob .item .txt {
+        font-size: .15rem;
+        line-height: 2;
+        letter-spacing: .05em;
+    }
+}
+
+.service_construction .technology {
+    background: #fff;
+    margin: .4rem 1rem 0;
+    padding: .32rem .4rem .35rem .38rem;
+    border: 1px solid #00a0b4;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .technology {
+        margin: .7rem 0 0;
+        padding: 0 .2rem .32rem;
+    }
+}
+
+.service_construction .technology .ph {
+    width: 4.7rem;
+    position: absolute;
+    top: -.22rem;
+    left: .4rem;
+}
+
+@media screen and (max-width:1200px) {
+    .service_construction .technology .ph {
+        width: 3.2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: .4rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .service_construction .technology .ph {
+        width: 3.2rem;
+        left: -.6rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .technology .ph {
+        width: auto;
+        position: relative;
+        top: -.32rem;
+        transform: translateY(0%);
+        left: 0;
+    }
+}
+
+.service_construction .technology .l_right {
+    width: 5.1rem;
+    margin: 0 0 0 auto;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .technology .l_right {
+        width: auto;
+        margin-top: -.06rem;
+    }
+}
+
+.service_construction .technology .l_right h4 {
+    font-size: .24rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    line-height: 1.6667;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .technology .l_right h4 {
+        font-size: .21rem;
+        letter-spacing: .05em;
+        line-height: 1.76;
+    }
+}
+
+.service_construction .technology .l_right p {
+    font-size: .16rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    line-height: 1.75;
+    margin-top: .2rem;
+}
+
+@media screen and (max-width:767px) {
+    .service_construction .technology .l_right p {
+        font-size: .15rem;
+        line-height: 2;
+        margin-top: .12rem;
+    }
+}
+
+.service_works {
+    margin-top: .8rem;
+    background: url('../img/service/works_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: .6rem 0;
+}
+
+@media screen and (max-width:767px) {
+    .service_works {
+        background: url('../img/service/works_bg_sp.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: .4rem;
+        padding: .75rem .4rem;
+    }
+}
+
+.service_works .box_center {
+    background: rgba(40, 44, 60, .9);
+    width: 5rem;
+    margin: 0 auto;
+    padding: .62rem 0;
+}
+
+@media screen and (max-width:767px) {
+    .service_works .box_center {
+        width: 100%;
+        padding: .3rem 0;
+    }
+}
+
+.service_works .section_ttl {
+    font-size: .36rem;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: .2em;
+    padding: .6rem 0;
+    background-image: url("../common/img/ttl_logo_white.png");
+}
+
+@media screen and (max-width:767px) {
+    .service_works .section_ttl {
+        font-size: .23rem;
+        padding: .4rem 0 .32rem;
+    }
+}
+
+.service_works .more_btn_white a {
+    font-weight: bold;
+}
+
+.service_works .section_ttl span {
+    font-size: .24rem;
+    margin-top: .15rem;
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .service_works .section_ttl span {
+        font-size: .16rem;
+        margin-top: .12rem;
+    }
+}
+
+#service .linkArea {
+    border-top: none;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width:767px) {
+    #service .linkArea {
+        padding: .4rem 0 .1rem 0;
+    }
+}

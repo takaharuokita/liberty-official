@@ -1,0 +1,157 @@
+/*============================
+下層　共通
+============================*/
+
+body {
+    animation: fadeIn 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+header ul li a::before {
+    background: #fff !important;
+}
+
+main {
+    overflow: hidden;
+}
+
+section {
+    overflow: visible !important;
+    width: calc(100vw - 160px);
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/* スマホ時のメールボタン */
+
+#sp_mail_btn {
+    top: 50% !important;
+    /*transform: translateY(-25%);*/
+    transform: translateY(-50%);
+}
+
+
+/* スマホ時の閉じるボタン */
+
+#sp_menu_close {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.menu-trigger span {
+    background-color: #000 !important;
+}
+
+.active span {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        width: 100%;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    #SPnaviBtn {
+        top: 50% !important;
+        /*transform: translateY(-25%);*/
+        transform: translateY(-50%);
+    }
+}
+
+
+/*============================
+下層　ヘッダー
+============================*/
+
+header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    header {
+        margin-bottom: 16px;
+    }
+    header h1 {
+        position: static;
+        top: 0%;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width:767px) {
+    header {
+        margin-bottom: 0px;
+    }
+    header nav ul {
+        top: inherit;
+        transform: translateY(0);
+    }
+    header nav ul li a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header ul li:last-child a {
+        border: none !important;
+    }
+}
+
+
+/*============================
+下層　ページタイトル
+============================*/
+
+.page_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 64px;
+}
+
+.page_title h2 {
+    font-size: 44px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.page_title p {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    letter-spacing: 0.2em;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    .page_title {
+        height: 160px;
+    }
+    .page_title h2 {
+        font-size: .27rem;
+    }
+    .page_title p {
+        font-size: .19rem;
+    }
+}

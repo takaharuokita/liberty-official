@@ -157,8 +157,7 @@ body.menu_open #sp_mail_btn a {
 
 @media screen and (max-width:767px) {
     .company_mv {
-        padding-top: 2.7rem;
-        background-image: url("../img/company/mv_sp.jpg");
+        background-image: url("../img/the_statue_of_Liberty.jpg");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
@@ -179,10 +178,10 @@ body.menu_open #sp_mail_btn a {
 
 @media screen and (max-width:767px) {
     .company_mv .section_kasou_ttl {
-        padding-top: 0.4rem;
+        padding-top: 0.2rem;
         background-size: auto 0.34rem;
         /* padding-bottom: 0.4rem; */
-        font-size: .27rem;
+        font-size: .20rem;
         top: 40%;
         transform: translateX(-50%) translateY(-30%);
     }

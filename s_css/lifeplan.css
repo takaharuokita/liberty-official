@@ -70,8 +70,7 @@ header ul li:nth-of-type(1) a {
 
 @media screen and (max-width:767px) {
     .service_mv {
-        padding-top: 2.7rem;
-        background-image: url("../img/consul.jpg");
+        background-image: url("../img/lifeplan.jpg");
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 100% auto;
@@ -97,10 +96,9 @@ header ul li:nth-of-type(1) a {
 
 @media screen and (max-width:767px) {
     .service_mv .section_kasou_ttl {
-        padding-top: 0.4rem;
+        padding-top: 0.2rem;
         background-size: auto 0.34rem;
-        /* padding-bottom: 0.4rem; */
-        font-size: .27rem;
+        font-size: .20rem;
         top: 40%;
         transform: translateX(-50%) translateY(-30%);
     }
